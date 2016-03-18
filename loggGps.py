@@ -3,7 +3,7 @@ import json
 import re
 
 # Directory where we write our geojson-data
-dataDir = '/home/ssm1937/mysite/static/gps/'
+dataDir = '/home/<YOUR PATH>/mysite/static/gps/'
 
 # Number of points in curves with recent history.
 # The number of points should match the update frequency of your GPS logger.

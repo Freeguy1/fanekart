@@ -5,7 +5,7 @@ from flask import Flask, request, url_for, render_template, make_response, abort
 import loggGps
 
 # Directory where we write (and read!) our geojson-data
-dataDir = '/home/ssm1937/mysite/static/gps/'
+dataDir = '/home/<YOUR PATH>/mysite/static/gps/'
 
 
 app = Flask(__name__)

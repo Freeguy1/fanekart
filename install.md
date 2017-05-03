@@ -16,8 +16,12 @@ Sign up for a free account at [pythonanywhere](https://www.pythonanywhere.com).
 
 ### 2. Flask web app 
 
-Get your web app up and running at your pythonanywhere installation. Click the "Web" tab, then "add a new web app". 
+Get your web app up and running at your pythonanywhere installation. Click the "Web" tab, then the "add a new web app" button. 
 
- 
+![pythonanywhere web tab -> add a new web app](https://github.com/LtGlahn/fanekart/blob/master/images/pythonanywhere-startwebapp.png) 
+
+In *"Select a python web framework"* click on the *"Flask"* option, otherwise just go with the default choices. 
+
+
 
 

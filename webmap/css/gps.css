@@ -2,7 +2,22 @@
 /* kommentar ... */
 
 
+
+body {
+
+	padding: 0;
+	margin: 0;
+
+}
+
+html, body {
+	height: 100%;
+}
+
+
+
 #vegreferanse {
+
   position: absolute;
   top: 0;
   left: 0;
@@ -18,15 +33,19 @@
   text-align: center;
   text-transform: uppercase;
   background-color: #444F55;
-}
 
+}
 
 
 
 /* KART */
-
 #map {
+
   height: 100%;
   width: 100%;
   z-index: 10
+
 }
+
+
+

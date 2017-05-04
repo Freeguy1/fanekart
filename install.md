@@ -25,10 +25,12 @@ Click at the **Flask** option at the choice **"Select a python web framework"**.
 You then have to tell your web app where to put non-dynamic content (html, javascript etc). Scroll down to the **"Static files:** section. 
 
 Your settings should be 
-> URL: static
-> Directory: /home/<yourPytonanywereUsername>/mysite/static/ 
+```
+URL: /static/
+Directory: /home/<yourPytonanywereUsername>/mysite/static/ 
+```
 
-In the example below, my pythonanywhere username is *janfreebeer*. 
+In the example below, my pythonanywhere username is *JanFreeBeer* (note: Case sensitive!)
 
 ![Pythonanywhere add folder for static files](https://github.com/LtGlahn/fanekart/blob/master/images/pythanywhere-staticfiles.png)  
 

@@ -8,4 +8,4 @@ For server backend, I've choosen [pythonanywhere](https://www.pythonanywhere.com
 
 Getting this up and running at your own flask web server should also be easy. Just look at the installation script to see where to change links, folder names. 
 
-[Installation](https://github.com/LtGlahn/fanekart/blob/master/install.md) s
+## [Installation](https://github.com/LtGlahn/fanekart/blob/master/install.md). 

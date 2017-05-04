@@ -67,7 +67,7 @@ realtime = L.realtime({
 		pointToLayer: function (feature, latlng) {
 			return L.marker(latlng, {
 				'icon': L.icon({
-					iconUrl: 'http://labs.ltglahn.no/kart/gps/img/1431044506_circle_red36x36.png',
+					iconUrl: 'images/1431044506_circle_red36x36.png',
 					iconSize:     [36, 36], // size of the icon
 					iconAnchor: [18, 18], 
 					popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
@@ -249,7 +249,7 @@ realtime.on('update', function(e) {
 			var timestamp = new Date( Date.parse( feature.properties.time)); 
 			var timePretty = mindato( timestamp ); 
 			document.querySelector('#vegreferanse').innerHTML = "SSM fane " + timePretty['klokke'];
-            return '<img src="http://labs.ltglahn.no/kart/gps/img/ssmlogo36x55.jpg"><br>' + 
+            return '<img src="images/clippy.png"><br>' + 
 			feature.properties.id + ' var her<br>' + 
 					'<b>' + timePretty['klokke'] + "</b><br>" + timePretty['dato'];
         },

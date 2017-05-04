@@ -1,1 +1,1 @@
-{"geometry": {"type": "Point", "coordinates": [10.4507250153, 63.42850185]}, "type": "Feature", "properties": { "description": "Cool free GPS tracking demo", "name" : "Fanekart demo GPS", "id": "fanekartgps", "time": "Thu Apr 27 2017 16:52:23 GMT+0000"}}
+{"geometry": {"type": "Point", "coordinates": [5.0, 59.0]}, "type": "Feature", "properties": {"description": "Demo of fanekart GPS", "id": "fanekartgps", "name": "Fanekart GPS", "time": "Thu May 04 2017 21:40:55 GMT+0000"}}

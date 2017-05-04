@@ -5,11 +5,19 @@ from flask import Flask, request, url_for, render_template, make_response, abort
 import loggGps
 
 # Directory where we write (and read!) our geojson-data
-dataDir = '/home/<YOUR PATH>/mysite/static/gps/'
+# dataDir = '/home/<yourPAusername>/fanekart/gpsdata/'
+dataDir = '/home/JanFreeBeer/fanekart/gpsdata/'
+
+
+mySecretGpsKeys = [ 'uniqueAndSecret123', 'topsecret' ]
 
 
 app = Flask(__name__)
 app.secret_key = 'This is really unique and secret'
+
+@app.route('/')
+def hello_world():
+    return 'Hello from Flask!'
 
 @app.route('/getfile/<filename>')
 def getFile(filename):
@@ -29,19 +37,17 @@ def getFile(filename):
     return r
 
 
-@app.route('/gps/mypos/<gpsId>/')
-def getpos(gpsId=''):
+@app.route('/gps/mypos/<gpsId>/<secretGpsKey>/')
+def getpos(gpsId='', secretGpsKey=''):
+    if secretGpsKey not in mySecretGpsKeys:
+        abort(401)
+        pass
+
     lat = request.args.get('lat', '')
     lon = request.args.get('lon', '')
 
-    ok = loggGps.loggGps( str(lat), str(lon), str(gpsId))
+    ok = loggGps.loggGps( str(lat), str(lon), str(gpsId), dataDir)
 
     return( ok + "<br>gps ID" + str(gpsId) + "<br>\n" +
             'lat' + str(lat) + "<br>\n" +
             "lon" + str(lon) )
-
-
-@app.route('/')
-def hello_world():
-    return 'Hello from Flask!'
-

@@ -3,7 +3,7 @@ import json
 import re
 
 # Directory where we write our geojson-data
-dataDir = '/home/<YOUR PATH>/mysite/static/gps/'
+# dataDir = '/home/<YOUR PATH>/mysite/static/gps/' XXX DELETE tHIS LINE
 
 # Number of points in curves with recent history.
 # The number of points should match the update frequency of your GPS logger.
@@ -52,7 +52,7 @@ def emptyGeoJson( filename):
         json.dump(gjdata, outfile)
 
 
-def loggGps(lat, lon, name):
+def loggGps(lat, lon, name, dataDir):
     """Main function. Basic sanity check of lat, lon (numeric, within
     geophysical possible range) and name (alphanumeric characters only)
 

@@ -47,7 +47,7 @@ Directory: /home/<yourPytonanywereUsername>/mysite/static/
 
 In the example below, my pythonanywhere username is *JanFreeBeer* (note: Case sensitive!)
 
-![Pythonanywhere add folder for static files](/images/pythanywhere-staticfiles-fanekart.png)
+![Pythonanywhere add folder for static files](/images/pythonanywhere-staticfiles-fanekart.png)
 
 Hit **Reload web app**.
 

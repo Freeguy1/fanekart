@@ -37,7 +37,7 @@ def getFile(filename):
     return r
 
 
-@app.route('/gps/mypos/<gpsId>/<secretGpsKey>/')
+@app.route('/gpspos/<gpsId>/<secretGpsKey>/')
 def getpos(gpsId='', secretGpsKey=''):
     if secretGpsKey not in mySecretGpsKeys:
         abort(401)

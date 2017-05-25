@@ -20,8 +20,6 @@ git clone https://github.com/LtGlahn/fanekart
 
 This will download all nescessary files to the home directory of your PythonAnywhere account.
 
-
-
 ## 3. Get your flask web app running.
 
 Get your flask web app up and running at your pythonanywhere installation. Click the "Web" tab, then the "add a new web app" button.
@@ -42,7 +40,7 @@ Scroll down to the **"Static files:"** section.
 Your settings should be
 ```
 URL: /fanekart/
-Directory: /home/<yourPytonanywereUsername>/mysite/static/
+Directory: /home/<yourPytonanywereUsername>/fanekart/webmap/
 ```
 
 In the example below, my pythonanywhere username is *JanFreeBeer* (note: Case sensitive!)
@@ -54,6 +52,8 @@ Hit **Reload web app**.
 Your map should appear live on the adress https://<yourPAusername.pythonanywhere.com/fanekart/ (but you still need to configure the map a bit, see section XXX)
 
 ### 3.2
+
+### 4. Configure the map
 
 
 
